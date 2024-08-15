@@ -176,9 +176,8 @@ def modulo(numerator, denominator):
 	if denominator == 0:
 		return "Error, 0 not expected. Please, enter value other than 0"
 	else: 
-		quotient = numerator//denominator
-		rem = numerator-quotient*denominator
-		return rem
+		rem = numerator//denominator
+		return numerator-denominator*rem
 		
 ''' Test cases 
 
