@@ -214,18 +214,5 @@ def count_subString(string, sub_string, flag):
 			i += 1
 	return count 
 	
-string = input()
-sub_string = input()
-
-''' test cases
-
-string = 'sgggs', 
-sub_string = 'gg'
-
-string = 'sgggggs'
-sub_string = 'ggg'
-
-'''
-
-print(count_subString(string, sub_string, True))
-print(count_subString(string, sub_string, False))
+print(count_subString("sgggs", "gg", True))
+print(count_subString("sgggs", "gg", False))
