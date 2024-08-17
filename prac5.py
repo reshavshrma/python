@@ -9,7 +9,6 @@ user can enter the style as capital or small
 4. convert to ZigZag 
 
 '''
-# def change_case(text, style):
 
 # convert_to_capital_case
 
@@ -24,8 +23,6 @@ def convert_to_capital_case(text):
 		else:
 			result = result + char #if no char is small, print same
 	return result
-	
-print(convert_to_capital_case("SGGSNed"))
 
 # convert_to_small_case
 
@@ -37,8 +34,6 @@ def convert_to_small_case(text):
 		else:
 			result = result + char 
 	return result
-	
-print(convert_to_small_case("SGGSNed"))
 
 #convert_to_reverse_case
 
@@ -53,8 +48,6 @@ def convert_to_reverse_case(text):
 			result = result + char
 			
 	return result
-	
-print(convert_to_reverse_case("SGGSNed"))
 
 #convert_to_zigzag_case
 
@@ -79,4 +72,27 @@ def convert_to_zigzag_case(text):
 	
 	return result
 
-print(convert_to_zigzag_case("SGGSNed"))
+#change_case
+
+def change_case(text, style):
+	if style == "c" or style == "C":
+		return convert_to_capital_case(text)
+	elif style == "s" or style == "S":
+		return convert_to_small_case(text)
+	elif style == "r" or style == "R":
+		return convert_to_reverse_case(text)
+	elif style == "z" or style == "Z":
+		return convert_to_zigzag_case(text)
+	else:
+		return "Inavlid Style. Please enter a valid style."
+	
+	
+#Test cases
+print(change_case("SGGSNed", "c"))
+print(change_case("SGGSNed", "C"))
+print(change_case("SGGSNed", "s"))
+print(change_case("SGGSNed", "S"))
+print(change_case("SGGSNed", "r"))
+print(change_case("SGGSNed", "R"))
+print(change_case("SGGSNed", "z"))
+print(change_case("SGGSNed", "Z"))
