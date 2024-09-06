@@ -23,11 +23,8 @@ def decimal_subtraction(num1, num2):
 		result = dec_num2 - dec_num1
 		return '-' + str(result)
 		
-	elif dec_num1 == dec_num2:
-		return 0
-		
 	else:
-		return "Invalid Input."
+		return 0
 		
 print(decimal_subtraction('25','19'))
 print(decimal_subtraction('19','25'))
